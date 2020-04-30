@@ -1,0 +1,19 @@
+   server {
+        listen       80;
+        server_name  test.info;
+        client_max_body_size 20M;
+        root   /Users/ttn/Public/programming/test;
+        
+        index  index.php index.html index.htm;
+
+        location / {
+             try_files $uri $uri/ /index.php?$args;
+        }
+        location ~ \.php$ {
+            fastcgi_pass   127.0.0.1:9000;
+            fastcgi_index  index.php;
+            # goes on same line:
+            fastcgi_param  SCRIPT_FILENAME /Users/ttn/Public/programming/test/$fastcgi_script_name;
+            include        fastcgi_params;
+        }
+    }
