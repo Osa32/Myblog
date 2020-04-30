@@ -1,0 +1,57 @@
+.menu {
+	list-style-type: none;
+    padding-left: 0;
+    margin-left: 0;
+    overflow: hidden;
+    width: 100%;
+}
+
+.menu li {
+	width: 50%;
+	float: left;
+}
+
+.header {
+	text-align: right;
+	padding-right: 10;
+}
+
+.menu1 {
+  list-style-type: none;
+  text-align: right;
+}
+
+.qqq2 {
+  width: 15px;
+}
+
+.error1 {
+  color: red;
+}
+
+.all_blogs {
+  font-weight: 900;
+}
+
+table {
+  border-collapse: collapse;
+  width: 50%;
+}
+
+table, th, td {
+  border: 1px solid black;
+}
+
+.line1 {
+    border: none; /* Убираем границу */
+    background-color: black; /* Цвет линии */
+    color: black; /* Цвет линии для IE6-7 */
+    height: 5px; /* Толщина линии */
+   }
+
+.line2 {
+    border: none; /* Убираем границу */
+    background-color: black; /* Цвет линии */
+    color: black; /* Цвет линии для IE6-7 */
+    height: 1px; /* Толщина линии */
+   }
